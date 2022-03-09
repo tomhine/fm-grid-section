@@ -1,0 +1,32 @@
+---
+const {avatarImg, styles, ring } = Astro.props;
+
+const ringCol = ring === 'dark' ? 'bg-violet-600' : ring === 'light' ? 'bg-violet-400' : 'bg-transparent';  
+---
+<!-- start main container -->
+<div class={`rounded-md flex flex-col gap-4 px-8 py-6 ${styles}`}>
+    <!-- start avatar info container -->
+    <div class="flex items-center gap-4">
+      <div class={`rounded-full p-0.5 ${ringCol}`}>
+        <img src={avatarImg} alt="reviewer profile picture" class="rounded-full h-7">
+      </div>
+      <div>
+        <div class="text-sm">
+          <slot name="name"></slot>
+        </div>
+        <p class="opacity-50 text-xs">Verified Graduate</p>
+      </div>
+    </div>
+    <!-- end avatar info container -->
+    <!-- start review title area -->
+    <div class="z-10 text-left text-xl lg:text-1xl font-semibold">
+      <slot name="review-title"></slot>
+    </div>
+    <!-- end review title area -->
+    <!-- start review main area -->
+    <div class="opacity-60 z-10 text-left text-sm">
+      <slot name="review-main"></slot>
+    </div>
+    <!-- end review main area -->
+  </div>
+  <!-- end main container -->

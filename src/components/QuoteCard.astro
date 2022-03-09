@@ -1,0 +1,36 @@
+---
+const { avatarImg } = Astro.props;
+---
+<!-- start card -->
+<div class="relative rounded-md bg-brand-violet lg:col-span-2 shadow-xl">
+  <!-- quote mark image -->
+  <img src="/assets/images/bg-pattern-quotation.svg" alt="user profile picture" class="absolute lg:h-28 top-0 right-8 lg:right-20 z-0">
+  <!-- start main container -->
+  <div class="flex flex-col gap-4 px-8 py-6">
+    <!-- start avatar info container -->
+    <div class="flex items-center gap-4">
+      <div class="rounded-full p-0.5 bg-violet-400">
+        <img src={avatarImg} alt="reviewer profile picture" class="rounded-full h-7">
+      </div>
+      <div>
+        <div class="text-white text-sm">
+          <slot name="name"></slot>
+        </div>
+        <p class="text-white/50 text-xs">Verified Graduate</p>
+      </div>
+    </div>
+    <!-- end avatar info container -->
+    <!-- start review title area -->
+    <div class="text-white z-10 text-left text-lg lg:text-1xl font-semibold">
+      <slot name="review-title"></slot>
+    </div>
+    <!-- end review title area -->
+    <!-- start review main area -->
+    <div class="text-white/60 z-10 text-left text-sm">
+      <slot name="review-main"></slot>
+    </div>
+    <!-- end review main area -->
+  </div>
+  <!-- end main container -->
+</div>
+<!-- end card -->
