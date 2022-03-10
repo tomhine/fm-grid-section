@@ -14,13 +14,12 @@ import Card from '../components/Card.astro';
 	</style>
 </head>
 <body class="font-barlow bg-brand-background antialiased">
-	<main class="p-6 my-8">
-		<section class="mx-auto flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-2 w-full max-w-6xl gap-8">
+		<main class="mx-auto flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-2 w-full max-w-6xl gap-8 p-6 my-8">
 			<QuoteCard avatarImg='/assets/images/image-daniel.jpg'>
 				<p slot="name">Daniel Clifford</p>
-				<p slot="review-title" class="leading-6">I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+				<h2 slot="review-title" class="leading-6">I received a job offer mid-course, and the subjects I learned were current, if not more so, 
   				in the company I joined. I honestly feel I got every penny’s worth.
-				</p>
+				</h2>
 				<p slot="review-main">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
   				transition and have heard some people who had an amazing experience here. I signed up 
   				for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
@@ -30,23 +29,23 @@ import Card from '../components/Card.astro';
 
 			<Card avatarImg='/assets/images/image-jonathan.jpg' styles="bg-gray-600 text-white">
 				<p slot="name">Jonathan Walters</p>
-				<p slot="review-title">The team was very supportive and kept me motivated</p>
+				<h2 slot="review-title">The team was very supportive and kept me motivated</h2>
 				<p slot="review-main">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
       		for a big company. This was one of the best investments I’ve made in myself. ”</p>
 			</Card>
 
 			<Card avatarImg='/assets/images/image-jeanette.jpg' styles="bg-white text-gray-700">
 				<p slot="name">Jeanette Harmon</p>
-				<p slot="review-title">An overall wonderful and rewarding experience</p>
+				<h2 slot="review-title">An overall wonderful and rewarding experience</h2>
 				<p slot="review-main">“ Thank you for the wonderful experience! I now have a job I
     			really enjoy, and make a good living while doing something I love. ”</p>
 			</Card>
 
 			<Card avatarImg='/assets/images/image-patrick.jpg' styles="bg-gray-800 text-white lg:col-span-2" ring="dark">
 				<p slot="name">Patrick Abrams</p>
-				<p slot="review-title">Awesome teaching support from TAs who did the
+				<h2 slot="review-title">Awesome teaching support from TAs who did the
    				bootcamp themselves. Getting guidance from them and learning from their
-    			experiences was easy.</p>
+    			experiences was easy.</h2>
 				<p slot="review-main">“ The staff seem genuinely concerned about my progress
 					which I find really refreshing. The program gave me the confidence necessary
 					to be able to go out in the world and present myself as a capable junior
@@ -56,7 +55,7 @@ import Card from '../components/Card.astro';
 
 			<Card avatarImg='/assets/images/image-kira.jpg' styles="lg:col-start-4 lg:row-start-1 lg:row-span-2 bg-white text-gray-700">
 				<p slot="name">Kira Whittle</p>
-				<p slot="review-title">Such a life-changing experience. Highly recommended!</p>
+				<h2 slot="review-title">Such a life-changing experience. Highly recommended!</h2>
 				<p slot="review-main">“ Before joining the bootcamp, I’ve never written a line of
 					code. I needed some structure from professionals who can help me learn
 					programming step by step. I was encouraged to enroll by a former student of
@@ -69,7 +68,6 @@ import Card from '../components/Card.astro';
 					full-stack developer after receiving multiple offers. 100% recommend! ”</p>
 			</Card>
 
-		</section>
-	</main>
+		</main>
 </body>
 </html>
