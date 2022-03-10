@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/tomhine/fm-grid-section)
-- Live Site URL: [Add live site URL here](https://tomhine.github.io/fm-grid-section)
+- Live Site URL: [Add live site URL here](https://reverent-franklin-c514cb.netlify.app/)
 
 ## My process
 
